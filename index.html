@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nithin Vandana — Software Development Engineer & AI Systems</title>
+  
+  <!-- SEO & Social Graph Meta Tags -->
+  <meta name="description" content="Portfolio of Nithin Vandana, a Software Development Engineer based in Bangalore. Specialist in Python, FastAPI, AsyncIO, React.js, TypeScript, PostgreSQL, and LLM Integrations." />
+  <meta name="keywords" content="Nithin Vandana, Software Engineer, SDE, AI Engineer, FastAPI, Python, React, AsyncIO, JobNexa, Intellica, Bangalore Developer" />
+  <meta name="author" content="Nithin Vandana" />
+  <meta property="og:title" content="Nithin Vandana — SDE & AI Systems Engineer" />
+  <meta property="og:description" content="Building high-throughput backend services, async pipelines, and full-stack AI applications." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#07090e" />
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ==========================================================================
+       Header & Sticky Navigation
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-link">
+        <img src="assets/profile.jpg" id="nithin-avatar" alt="Nithin Vandana" class="brand-avatar" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'40\' height=\'40\' viewBox=\'0 0 40 40\'><rect width=\'40\' height=\'40\' fill=\'%236366f1\'/><text x=\'50%25\' y=\'55%25\' font-size=\'16\' font-weight=\'bold\' fill=\'%23ffffff\' text-anchor=\'middle\' dominant-baseline=\'middle\'>NV</text></svg>'" />
+        <span>Nithin Vandana</span>
+        <span class="brand-tag">SDE / AI</span>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#terminal" class="nav-link">Terminal</a></li>
+          <li><a href="#principles" class="nav-link">Philosophy</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#timeline" class="nav-link">Experience</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="command-trigger" class="command-trigger" aria-label="Open Command Palette">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          <span>Search</span>
+          <span class="kbd-shortcut">Ctrl K</span>
+        </button>
+
+        <button id="theme-toggle" class="btn-icon" aria-label="Toggle Theme">
+          <span id="theme-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          </span>
+        </button>
+
+        <a href="resume.html" target="_blank" class="btn btn-secondary" style="padding: 0.45rem 0.9rem; font-size: 0.8125rem;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          <span>Resume</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         Hero Section
+         ========================================================================== -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="status-badge">
+            <span class="pulse-dot"></span>
+            <span>Available for Full-Time SDE & AI Engineering Roles</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Nithin Vandana</span>.
+          </h1>
+
+          <div class="hero-subtitle">
+            &gt; SDE &bull; Python/FastAPI &bull; AsyncIO &bull; Full-Stack AI
+          </div>
+
+          <p class="hero-bio">
+            B.Tech Computer Science graduate based in <strong>Bangalore, Karnataka</strong>. I build high-throughput backend services, resilient asynchronous data pipelines, and intelligent AI-powered platforms. Engineered <strong>JobNexa</strong> (ingesting 1,000+ daily listings across 120+ ATS portals with 98% deduplication) and <strong>Intellica</strong> (serving 200+ faculty on a live college server).
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              <span>Explore Selected Work</span>
+            </a>
+            <button class="btn btn-secondary" data-open-arch="jobnexa">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              <span>Inspect Architecture</span>
+            </button>
+            <a href="#contact" class="btn btn-outline">
+              <span>Get In Touch</span>
+            </a>
+          </div>
+
+          <!-- Quick Interactive Contact Strips -->
+          <div class="hero-contact-strip">
+            <button class="contact-pill" data-copy="nithinvandana26@gmail.com" data-label="email address">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>nithinvandana26@gmail.com</span>
+              <span style="opacity: 0.6;">(copy)</span>
+            </button>
+
+            <button class="contact-pill" data-copy="+91 9347388372" data-label="phone number">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>+91 9347388372</span>
+            </button>
+
+            <a href="https://github.com/Nithin560" target="_blank" class="contact-pill">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              <span>GitHub</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/vandana-nithin-05b27628b" target="_blank" class="contact-pill">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              <span>LinkedIn</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Profile Visual Column with Real Photo -->
+        <div class="hero-visual-card">
+          <div class="visual-image-wrap">
+            <img src="assets/profile.jpg" alt="Nithin Vandana" class="visual-image" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'300\' height=\'350\' viewBox=\'0 0 300 350\'><rect width=\'300\' height=\'350\' fill=\'%23111827\'/><text x=\'50%25\' y=\'50%25\' font-size=\'20\' font-weight=\'bold\' fill=\'%2394a3b8\' text-anchor=\'middle\'>Nithin Vandana</text></svg>'" />
+            <div class="image-overlay-badge">
+              <span>📍 Bangalore, Karnataka</span>
+              <span style="color: var(--accent-emerald);">● Online</span>
+            </div>
+          </div>
+
+          <div class="visual-details-list">
+            <div class="visual-detail-item">
+              <span class="visual-label">Degree</span>
+              <span class="visual-val">B.Tech Computer Science</span>
+            </div>
+            <div class="visual-detail-item">
+              <span class="visual-label">Academic CGPA</span>
+              <span class="visual-val">8.2 / 10 (MIC Tech)</span>
+            </div>
+            <div class="visual-detail-item">
+              <span class="visual-label">Key Stack</span>
+              <span class="visual-val">Python &bull; FastAPI &bull; React &bull; SQL</span>
+            </div>
+            <div class="visual-detail-item">
+              <span class="visual-label">Recent Recognition</span>
+              <span class="visual-val" style="color: var(--accent-amber);">2nd Prize - Engineers' Day 2025</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Metrics & Telemetry Strip
+         ========================================================================== -->
+    <section class="metrics-section">
+      <div class="container">
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <div class="metric-val">1,000+</div>
+            <div class="metric-label">Daily Jobs Ingested</div>
+            <div class="metric-detail">AsyncIO & HTTPX crawler</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-val">120+</div>
+            <div class="metric-label">ATS Portals Scraped</div>
+            <div class="metric-detail">Workday, Greenhouse, etc.</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-val">98%</div>
+            <div class="metric-label">Deduplication Rate</div>
+            <div class="metric-detail">Hashing + fuzzy cluster</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-val">200+</div>
+            <div class="metric-label">Active Live Users</div>
+            <div class="metric-detail">College faculty & HODs</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-val">75%</div>
+            <div class="metric-label">Turnaround Cut</div>
+            <div class="metric-detail">Automated research flow</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-val">99.9%</div>
+            <div class="metric-label">Telemetry Uptime</div>
+            <div class="metric-detail">Dockerized architecture</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Selected Work / Projects
+         ========================================================================== -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-kicker">PRODUCTION PLATFORMS</div>
+          <h2 class="section-title">Engineered to Solve Real Constraints</h2>
+          <p class="section-subtitle">
+            Not toy tutorial clones. Platforms built with asynchronous concurrency, strict data validation, and deployed to live production users.
+          </p>
+        </div>
+
+        <div class="projects-list">
+          
+          <!-- Project 1: JobNexa -->
+          <article class="project-card">
+            <div class="project-header">
+              <div>
+                <div class="project-badge-pill">⚡ Flagship Backend & Concurrency</div>
+                <h3 class="project-title">JobNexa – AI-Powered Job Intelligence Platform</h3>
+                <div class="project-tagline">
+                  High-throughput async job aggregator processing 1,000+ daily listings with 98% deduplication across 120+ ATS portals.
+                </div>
+              </div>
+              <div class="project-period">Aug 2026 – Oct 2026</div>
+            </div>
+
+            <ul class="project-highlights">
+              <li class="project-highlight-item">
+                <span class="check-icon">✓</span>
+                <span><strong>Automated Ingestion Pipeline:</strong> Built a distributed crawler using <code>AsyncIO</code> & <code>HTTPX</code> monitoring 120+ tech ATS portals, parsing 1,000+ vacancies daily without blocking I/O.</span>
+              </li>
+              <li class="project-highlight-item">
+                <span class="check-icon">✓</span>
+                <span><strong>98% Deduplication Engine:</strong> Formulated dual-phase cryptographic hashing and NLP fuzzy text clustering, eliminating duplicate job postings across aggregators.</span>
+              </li>
+              <li class="project-highlight-item">
+                <span class="check-icon">✓</span>
+                <span><strong>FastAPI & PostgreSQL Backend:</strong> Engineered RESTful endpoints with <code>SQLAlchemy</code>, strict <code>Pydantic v2</code> schemas, and NLP scoring yielding 95% resume-to-job match accuracy.</span>
+              </li>
+              <li class="project-highlight-item">
+                <span class="check-icon">✓</span>
+                <span><strong>Containerized Telemetry:</strong> Architected React / TypeScript dashboard containerized with multi-stage Docker builds, maintaining 99.9% telemetry uptime.</span>
+              </li>
+            </ul>
+
+            <div class="project-metrics-row">
+              <div class="proj-metric-item">
+                <div class="proj-metric-val">1,000+</div>
+                <div class="proj-metric-lbl">Daily Jobs</div>
+              </div>
+              <div class="proj-metric-item">
+                <div class="proj-metric-val">120+</div>
+                <div class="proj-metric-lbl">ATS Portals</div>
+              </div>
+              <div class="proj-metric-item">
+                <div class="proj-metric-val">98%</div>
+                <div class="proj-metric-lbl">Deduplication</div>
+              </div>
+              <div class="proj-metric-item">
+                <div class="proj-metric-val">95%</div>
+                <div class="proj-metric-lbl">Match Accuracy</div>
+              </div>
+              <div class="proj-metric-item">
+                <div class="proj-metric-val">99.9%</div>
+                <div class="proj-metric-lbl">Uptime</div>
+              </div>
+            </div>
+
+            <div class="tags-row">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">FastAPI</span>
+              <span class="tech-tag">AsyncIO</span>
+              <span class="tech-tag">HTTPX</span>
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag">SQLAlchemy</span>
+              <span class="tech-tag">Pydantic v2</span>
+              <span class="tech-tag">React.js</span>
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">Docker</span>
+              <span class="tech-tag">JWT</span>
+            </div>
+
+            <div class="project-actions">
+              <button class="btn btn-primary" data-open-arch="jobnexa">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                <span>Inspect Architecture & Diagram</span>
+              </button>
+              <a href="https://github.com/Nithin560/JobNexa" target="_blank" class="btn btn-secondary">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                <span>GitHub Repository</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 2: Intellica -->
+          <article class="project-card">
+            <div class="project-header">
+              <div>
+                <div class="project-badge-pill" style="color: var(--accent-amber); background: rgba(245, 158, 11, 0.12); border-color: rgba(245, 158, 11, 0.25);">
+                  🏆 2nd Prize - National Engineers' Day 2025
+                </div>
+                <h3 class="project-title">Intellica – Intelligent Research Insights Portal</h3>
+                <div class="project-tagline">
+                  Full-stack academic research portal deployed on a live college server, automating 18+ research categories for 200+ active faculty & HOD users.
+                </div>
+              </div>
+              <div class="project-period">Jan 2026 – Apr 2026</div>
+            </div>
+
+            <ul class="project-highlights">
+              <li class="project-highlight-item">
+                <span class="check-icon">✓</span>
+                <span><strong>Live Institutional Server Deployment:</strong> Built and deployed on college production infrastructure (MERN + Docker), automating 18+ research publication categories and cutting appraisal turnaround by 75%.</span>
+              </li>
+              <li class="project-highlight-item">
+                <span class="check-icon">✓</span>
+                <span><strong>Multi-Tier RBAC Approval Engine:</strong> Designed server-side state-machine workflows for Faculty, HOD, and Admin roles with validation checks, reducing manual approval latency by 60%.</span>
+              </li>
+              <li class="project-highlight-item">
+                <span class="check-icon">✓</span>
+                <span><strong>High-Concurrency Mongo Schema:</strong> Engineered indexed document schemas with real-time status tracking, actively supporting 200+ faculty and department heads across branches.</span>
+              </li>
+              <li class="project-highlight-item">
+                <span class="check-icon">✓</span>
+                <span><strong>National Award:</strong> Clinched 2nd Prize at Project Expo (National Engineers' Day 2025) and selected for institutional keynote at College Technical Fest.</span>
+              </li>
+            </ul>
+
+            <div class="project-metrics-row">
+              <div class="proj-metric-item">
+                <div class="proj-metric-val">200+</div>
+                <div class="proj-metric-lbl">Active Faculty</div>
+              </div>
+              <div class="proj-metric-item">
+                <div class="proj-metric-val">18+</div>
+                <div class="proj-metric-lbl">Categories</div>
+              </div>
+              <div class="proj-metric-item">
+                <div class="proj-metric-val">75%</div>
+                <div class="proj-metric-lbl">Turnaround Cut</div>
+              </div>
+              <div class="proj-metric-item">
+                <div class="proj-metric-val">60%</div>
+                <div class="proj-metric-lbl">Approval Speedup</div>
+              </div>
+              <div class="proj-metric-item">
+                <div class="proj-metric-val">Live</div>
+                <div class="proj-metric-lbl">Server Host</div>
+              </div>
+            </div>
+
+            <div class="tags-row">
+              <span class="tech-tag">React.js</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">Express</span>
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">React Charts</span>
+              <span class="tech-tag">RESTful APIs</span>
+              <span class="tech-tag">Docker</span>
+              <span class="tech-tag">RBAC</span>
+              <span class="tech-tag">Git</span>
+            </div>
+
+            <div class="project-actions">
+              <button class="btn btn-primary" data-open-arch="intellica">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                <span>Inspect Architecture & Diagram</span>
+              </button>
+              <a href="https://github.com/Nithin560/Intellica" target="_blank" class="btn btn-secondary">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                <span>GitHub Repository</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 3: Smart Diet -->
+          <article class="project-card">
+            <div class="project-header">
+              <div>
+                <div class="project-badge-pill" style="color: var(--accent-emerald); background: rgba(16, 185, 129, 0.12); border-color: rgba(16, 185, 129, 0.25);">
+                  🤖 Google Gemini LLM Integration
+                </div>
+                <h3 class="project-title">Smart Diet – AI-Powered Fitness Platform</h3>
+                <div class="project-tagline">
+                  Personalized nutrition web app combining Google Gemini LLM, biometric metrics, and live weather conditions to dynamically tailor meal plans.
+                </div>
+              </div>
+              <div class="project-period">Dec 2025 – Mar 2026</div>
+            </div>
+
+            <ul class="project-highlights">
+              <li class="project-highlight-item">
+                <span class="check-icon">✓</span>
+                <span><strong>High-Performance Async Backend:</strong> Built React and FastAPI application backed by async MongoDB (Motor) and JWT/OTP authentication for 500+ users, reducing page load latency by 40%.</span>
+              </li>
+              <li class="project-highlight-item">
+                <span class="check-icon">✓</span>
+                <span><strong>Context-Aware Gemini LLM:</strong> Integrated Google Gemini API to dynamically generate personalized nutrition plans from user BMI, calorie targets, and real-time weather, improving adherence by 30%.</span>
+              </li>
+              <li class="project-highlight-item">
+                <span class="check-icon">✓</span>
+                <span><strong>CI/CD Automated Delivery:</strong> Packaged application inside Docker containers with continuous integration pipelines for zero-downtime releases.</span>
+              </li>
+            </ul>
+
+            <div class="project-metrics-row">
+              <div class="proj-metric-item">
+                <div class="proj-metric-val">500+</div>
+                <div class="proj-metric-lbl">Users</div>
+              </div>
+              <div class="proj-metric-item">
+                <div class="proj-metric-val">40%</div>
+                <div class="proj-metric-lbl">Page Load Cut</div>
+              </div>
+              <div class="proj-metric-item">
+                <div class="proj-metric-val">30%</div>
+                <div class="proj-metric-lbl">Adherence Boost</div>
+              </div>
+              <div class="proj-metric-item">
+                <div class="proj-metric-val">300+</div>
+                <div class="proj-metric-lbl">Meal Plans</div>
+              </div>
+              <div class="proj-metric-item">
+                <div class="proj-metric-val">CI/CD</div>
+                <div class="proj-metric-lbl">Pipelines</div>
+              </div>
+            </div>
+
+            <div class="tags-row">
+              <span class="tech-tag">React.js</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">FastAPI</span>
+              <span class="tech-tag">Async MongoDB (Motor)</span>
+              <span class="tech-tag">Google Gemini API</span>
+              <span class="tech-tag">JWT & OTP</span>
+              <span class="tech-tag">Tailwind CSS</span>
+              <span class="tech-tag">Docker</span>
+              <span class="tech-tag">CI/CD</span>
+            </div>
+
+            <div class="project-actions">
+              <button class="btn btn-primary" data-open-arch="smart-diet">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                <span>Inspect Architecture & Diagram</span>
+              </button>
+              <a href="https://github.com/Nithin560/Smart-Diet" target="_blank" class="btn btn-secondary">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                <span>GitHub Repository</span>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Interactive Developer Terminal
+         ========================================================================== -->
+    <section id="terminal" class="terminal-section">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-kicker">CLI ENVIRONMENT</div>
+          <h2 class="section-title">Developer Interactive Console</h2>
+          <p class="section-subtitle">
+            Prefer interacting through a shell? Explore my technical stack, system architecture, verified metrics, or trigger actions directly from the command line.
+          </p>
+        </div>
+
+        <div class="terminal-window">
+          <div class="terminal-bar">
+            <div class="terminal-dots">
+              <span class="terminal-dot dot-red"></span>
+              <span class="terminal-dot dot-yellow"></span>
+              <span class="terminal-dot dot-green"></span>
+            </div>
+            <div class="terminal-title">nithin@bengaluru: ~ (zsh)</div>
+            <div class="terminal-shortcuts">
+              <button class="quick-cmd-btn" data-quick-cmd="help">help</button>
+              <button class="quick-cmd-btn" data-quick-cmd="projects">projects</button>
+              <button class="quick-cmd-btn" data-quick-cmd="skills">skills</button>
+              <button class="quick-cmd-btn" data-quick-cmd="stats">stats</button>
+              <button class="quick-cmd-btn" data-quick-cmd="architecture">architecture</button>
+              <button class="quick-cmd-btn" data-quick-cmd="sudo hire" style="color: var(--accent-emerald);">sudo hire</button>
+            </div>
+          </div>
+
+          <div class="terminal-body">
+            <div id="terminal-history" class="terminal-history"></div>
+            
+            <div class="terminal-input-row">
+              <div class="terminal-prompt-line">
+                <span class="prompt-user">nithin</span><span class="prompt-host">@bengaluru:~$</span>
+              </div>
+              <input type="text" id="terminal-input" class="terminal-input" placeholder="type 'help', 'projects', 'stats', 'architecture'..." autocomplete="off" spellcheck="false" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Engineering Principles / How I Build
+         ========================================================================== -->
+    <section id="principles" class="principles-section">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-kicker">HOW I BUILD</div>
+          <h2 class="section-title">Engineering Principles</h2>
+          <p class="section-subtitle">
+            Software craftsmanship is defined by the trade-offs we choose. Here are the core architectural axioms guiding how I build.
+          </p>
+        </div>
+
+        <div class="principles-grid">
+          <div class="principle-card">
+            <div class="principle-title">
+              <span>⚡</span> Async-First Concurrency
+            </div>
+            <div class="principle-quote">"I/O should never block your CPU."</div>
+            <p class="principle-body">
+              When building crawlers or data ingestion engines (like JobNexa), synchronous requests cripple throughput. By embracing non-blocking event loops with AsyncIO, HTTPX, and Motor, we process thousands of requests concurrently on modest infrastructure.
+            </p>
+          </div>
+
+          <div class="principle-card">
+            <div class="principle-title">
+              <span>🛡️</span> Strict Data Contracts
+            </div>
+            <div class="principle-quote">"Untyped dictionaries are bugs waiting to happen."</div>
+            <p class="principle-body">
+              Every external payload entering the system passes through strict Pydantic v2 schemas and validation boundaries. If data fails validation at the gateway, it never pollutes database layers or triggers silent failures downstream.
+            </p>
+          </div>
+
+          <div class="principle-card">
+            <div class="principle-title">
+              <span>🐳</span> Production Realism
+            </div>
+            <div class="principle-quote">"It doesn't count until it's running in production."</div>
+            <p class="principle-body">
+              I don't stop at 'works on my machine'. Everything I ship is containerized with multi-stage Docker builds, logged cleanly, guarded with RBAC and JWT authentication, and monitored for real uptime.
+            </p>
+          </div>
+
+          <div class="principle-card">
+            <div class="principle-title">
+              <span>🧠</span> Pragmatic AI Usage
+            </div>
+            <div class="principle-quote">"Use LLMs for reasoning, deterministic code for precision."</div>
+            <p class="principle-body">
+              I treat LLMs as specialized reasoning modules rather than magic bullets. In Smart Diet, Gemini handles contextual meal customization, while deterministic code calculates exact macros, calorie budgets, and validation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Skills Matrix
+         ========================================================================== -->
+    <section id="skills" class="skills-section">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-kicker">TECHNICAL ARSENAL</div>
+          <h2 class="section-title">Tools & Competencies</h2>
+          <p class="section-subtitle">
+            Categorized overview of languages, frameworks, datastores, and cloud infrastructure I use daily to build software.
+          </p>
+        </div>
+
+        <div id="skills-filter-container" class="skills-filter-bar"></div>
+        <div id="skills-grid-container" class="skills-grid"></div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Experience, Education & Honors Timeline
+         ========================================================================== -->
+    <section id="timeline" class="timeline-section">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-kicker">BACKGROUND & TRAJECTORY</div>
+          <h2 class="section-title">Experience & Education</h2>
+          <p class="section-subtitle">
+            Formal engineering foundation combined with practical industry internships and national hackathon achievements.
+          </p>
+        </div>
+
+        <div class="timeline-grid">
+          <!-- Experience Column -->
+          <div class="timeline-column">
+            <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+              <span>💼</span> Industry Internships
+            </h3>
+
+            <div class="timeline-card">
+              <div class="timeline-card-header">
+                <div>
+                  <div class="timeline-role">Web Development Intern</div>
+                  <div class="timeline-company">ExcelR Edtech Pvt. Ltd.</div>
+                </div>
+                <div class="timeline-date">Aug 2024 – Oct 2024</div>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Built full-stack web application modules using modern JavaScript, React.js, and RESTful APIs.</li>
+                <li>Refactored legacy UI components into reusable, responsive interfaces with modular CSS.</li>
+                <li>Collaborated with senior engineers on client-side caching and page load optimization.</li>
+              </ul>
+            </div>
+
+            <div class="timeline-card">
+              <div class="timeline-card-header">
+                <div>
+                  <div class="timeline-role">Data Science Master Virtual Intern</div>
+                  <div class="timeline-company">AICTE – EduSkills (Altair)</div>
+                </div>
+                <div class="timeline-date">Oct 2024 – Dec 2024</div>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Conducted exploratory data analysis (EDA), data cleaning pipelines, and predictive modeling on structured datasets.</li>
+                <li>Engineered machine learning pipelines with feature extraction and evaluation metrics.</li>
+                <li>Synthesized visual dashboards and reports to communicate model accuracy and insights.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Education & Awards Column -->
+          <div class="timeline-column">
+            <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+              <span>🎓</span> Education & Honors
+            </h3>
+
+            <div class="timeline-card">
+              <div class="timeline-card-header">
+                <div>
+                  <div class="timeline-role">B.Tech — Computer Science Engineering</div>
+                  <div class="timeline-company">DVR & Dr. HS MIC College of Technology</div>
+                </div>
+                <div class="timeline-date">2022 – 2026</div>
+              </div>
+              <div style="font-family: var(--font-mono); font-size: 0.9375rem; color: var(--accent-cyan); margin-bottom: 0.75rem;">
+                Academic CGPA: <strong>8.2 / 10</strong>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Core Coursework: Data Structures & Algorithms, OOP, Database Management Systems, Computer Networks, Operating Systems.</li>
+              </ul>
+            </div>
+
+            <div class="timeline-card">
+              <div class="timeline-card-header">
+                <div>
+                  <div class="timeline-role">Awards & Key Honors</div>
+                  <div class="timeline-company">Project Expo Recognition</div>
+                </div>
+                <div class="timeline-date">2025</div>
+              </div>
+              <ul class="timeline-bullets">
+                <li><strong>2nd Prize at Project Expo (National Engineers' Day 2025)</strong> for <em>Intellica – Intelligent Research Insights Portal</em>.</li>
+                <li><strong>Selected Keynote Presenter</strong> at College Technical Fest for live demonstration of Intellica's RBAC research automation.</li>
+              </ul>
+            </div>
+
+            <div class="timeline-card">
+              <div class="timeline-card-header">
+                <div>
+                  <div class="timeline-role">Industry Certifications</div>
+                  <div class="timeline-company">Infosys & Cisco</div>
+                </div>
+                <div class="timeline-date">Verified</div>
+              </div>
+              <ul class="timeline-bullets">
+                <li><strong>Infosys Springboard:</strong> Python, JavaScript, Java, Prompt Engineering</li>
+                <li><strong>Cisco Networking Academy:</strong> Data Analytics Certification</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Contact & Availability Callout
+         ========================================================================== -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="contact-box">
+          <div class="status-badge" style="margin: 0 auto 1.5rem; display: inline-flex;">
+            <span class="pulse-dot"></span>
+            <span>Immediate SDE / AI Systems Availability</span>
+          </div>
+
+          <h2 class="contact-title">Let's Build Something High-Impact.</h2>
+          <p class="contact-desc">
+            I'm currently seeking entry-level Software Development Engineer (SDE) or AI Engineering roles in Bangalore or remote. If your team values clean architecture, non-blocking concurrency, and reliable shipping, let's talk.
+          </p>
+
+          <div class="contact-actions">
+            <button id="open-message-composer" class="btn btn-primary" style="padding: 0.85rem 1.6rem;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>Draft Direct Email</span>
+            </button>
+
+            <button class="btn btn-secondary" data-copy="nithinvandana26@gmail.com" data-label="email address">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              <span>Copy Email</span>
+            </button>
+
+            <button class="btn btn-secondary" data-copy="+91 9347388372" data-label="phone number">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>Copy Phone (+91 9347388372)</span>
+            </button>
+
+            <a href="resume.html" target="_blank" class="btn btn-outline">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+              <span>Open Printable Resume</span>
+            </a>
+          </div>
+
+          <div class="contact-meta-row">
+            <span class="contact-meta-item">📍 Bangalore, Karnataka, India</span>
+            <span class="contact-meta-item">🔗 github.com/Nithin560</span>
+            <span class="contact-meta-item">💼 linkedin.com/in/vandana-nithin-05b27628b</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       Site Footer
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div>
+        <strong>Nithin Vandana</strong> &bull; Crafted with semantic HTML5, modern CSS & vanilla JavaScript.
+      </div>
+      <ul class="footer-links">
+        <li><a href="https://github.com/Nithin560" target="_blank">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/vandana-nithin-05b27628b" target="_blank">LinkedIn</a></li>
+        <li><a href="resume.html" target="_blank">Resume</a></li>
+        <li><a href="#hero">Back to Top ↑</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       Command Palette Modal (Ctrl + K)
+       ========================================================================== -->
+  <div id="palette-backdrop" class="palette-backdrop">
+    <div class="palette-modal">
+      <div class="palette-search-row">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--text-muted);"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        <input type="text" id="palette-input" class="palette-input" placeholder="Type a command or jump to section..." />
+        <span class="kbd-shortcut">ESC</span>
+      </div>
+      <ul id="palette-list" class="palette-list"></ul>
+      <div class="palette-footer">
+        <span>Navigation: <kbd>↑</kbd> <kbd>↓</kbd> to select</span>
+        <span>Execute: <kbd>↵ Enter</kbd></span>
+        <span>Exit: <kbd>ESC</kbd></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       System Architecture Modal
+       ========================================================================== -->
+  <div id="arch-modal-backdrop" class="modal-backdrop">
+    <div class="arch-modal">
+      <div class="modal-head">
+        <div id="arch-modal-title" class="modal-title">System Architecture</div>
+        <button id="arch-modal-close" class="modal-close-btn" aria-label="Close modal">&times;</button>
+      </div>
+      <div id="arch-modal-tabs" class="modal-tabs"></div>
+      <div id="arch-modal-body" class="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- Toast Container -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <!-- Scripts -->
+  <script src="projects-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
