@@ -490,10 +490,23 @@ nav {
   color: var(--text-primary);
 }
 
+[data-theme="light"] .btn-secondary {
+  background: #ffffff;
+  border-color: rgba(15, 23, 42, 0.18);
+  color: #0f172a;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
 .btn-secondary:hover {
   border-color: var(--border-highlight);
   background: var(--bg-card-hover);
   transform: translateY(-2px);
+}
+
+[data-theme="light"] .btn-secondary:hover {
+  background: #f8fafc;
+  border-color: #6366f1;
+  color: #4338ca;
 }
 
 .btn-outline {
@@ -502,10 +515,23 @@ nav {
   color: var(--text-secondary);
 }
 
+[data-theme="light"] .btn-outline {
+  background: #ffffff;
+  border-color: rgba(15, 23, 42, 0.2);
+  color: #0f172a;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
 .btn-outline:hover {
   border-color: var(--border-highlight);
   color: var(--text-primary);
   background: rgba(99, 102, 241, 0.08);
+}
+
+[data-theme="light"] .btn-outline:hover {
+  background: #f8fafc;
+  border-color: #6366f1;
+  color: #4338ca;
 }
 
 /* Quick contact pills */
@@ -941,6 +967,51 @@ nav {
   gap: 1rem;
 }
 
+[data-theme="light"] .project-card {
+  background: #ffffff;
+  border-color: rgba(15, 23, 42, 0.12);
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.06);
+}
+
+[data-theme="light"] .project-title {
+  color: #090d16;
+}
+
+[data-theme="light"] .project-tagline {
+  color: #334155;
+}
+
+[data-theme="light"] .project-highlight-item {
+  color: #334155;
+}
+
+[data-theme="light"] .project-metrics-row {
+  background: #f8fafc;
+  border-color: rgba(15, 23, 42, 0.1);
+}
+
+[data-theme="light"] .proj-metric-val {
+  color: #0284c7;
+}
+
+[data-theme="light"] .proj-metric-lbl {
+  color: #475569;
+  font-weight: 600;
+}
+
+[data-theme="light"] .tech-tag {
+  background: #f1f5f9;
+  color: #1e293b;
+  border-color: rgba(15, 23, 42, 0.12);
+  font-weight: 600;
+}
+
+[data-theme="light"] .tech-tag:hover {
+  background: #ffffff;
+  border-color: #6366f1;
+  color: #4338ca;
+}
+
 /* ==========================================================================
    Interactive Developer Terminal
    ========================================================================== */
@@ -1122,6 +1193,25 @@ nav {
   font-size: 0.9375rem;
   color: var(--text-secondary);
   line-height: 1.6;
+}
+
+[data-theme="light"] .principle-card {
+  background: #ffffff;
+  border-color: rgba(15, 23, 42, 0.12);
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.05);
+}
+
+[data-theme="light"] .principle-title {
+  color: #090d16;
+}
+
+[data-theme="light"] .principle-quote {
+  color: #0369a1;
+  font-weight: 600;
+}
+
+[data-theme="light"] .principle-body {
+  color: #334155;
 }
 
 /* ==========================================================================
@@ -1522,6 +1612,25 @@ nav {
   font-weight: bold;
 }
 
+[data-theme="light"] .timeline-card {
+  background: #ffffff;
+  border-color: rgba(15, 23, 42, 0.12);
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.05);
+}
+
+[data-theme="light"] .timeline-role {
+  color: #090d16;
+}
+
+[data-theme="light"] .timeline-company {
+  color: #0369a1;
+  font-weight: 700;
+}
+
+[data-theme="light"] .timeline-bullets {
+  color: #334155;
+}
+
 /* ==========================================================================
    Contact & Availability Callout
    ========================================================================== */
@@ -1555,13 +1664,74 @@ nav {
   font-size: 2.25rem;
   font-weight: 800;
   margin-bottom: 1rem;
+  color: #ffffff;
 }
 
 .contact-desc {
   font-size: 1.0625rem;
-  color: var(--text-secondary);
+  color: #e2e8f0;
   max-width: 620px;
   margin: 0 auto 2rem;
+  line-height: 1.7;
+}
+
+[data-theme="light"] .contact-box {
+  background: #ffffff !important;
+  border: 1px solid rgba(99, 102, 241, 0.35) !important;
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.08), 0 0 25px rgba(99, 102, 241, 0.08) !important;
+}
+
+[data-theme="light"] .contact-title {
+  color: #090d16 !important;
+}
+
+[data-theme="light"] .contact-desc {
+  color: #334155 !important;
+  font-weight: 500;
+}
+
+[data-theme="light"] .contact-box .status-badge {
+  background: rgba(16, 185, 129, 0.15) !important;
+  color: #047857 !important;
+  border-color: rgba(16, 185, 129, 0.35) !important;
+  font-weight: 700;
+}
+
+[data-theme="light"] .contact-box .btn-secondary {
+  background: #ffffff !important;
+  color: #0f172a !important;
+  border-color: rgba(15, 23, 42, 0.2) !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  font-weight: 600;
+}
+
+[data-theme="light"] .contact-box .btn-secondary:hover {
+  background: #f8fafc !important;
+  border-color: #6366f1 !important;
+  color: #4338ca !important;
+}
+
+[data-theme="light"] .contact-box .btn-outline {
+  background: #ffffff !important;
+  color: #0f172a !important;
+  border-color: rgba(15, 23, 42, 0.2) !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  font-weight: 600;
+}
+
+[data-theme="light"] .contact-box .btn-outline:hover {
+  background: #f8fafc !important;
+  border-color: #6366f1 !important;
+  color: #4338ca !important;
+}
+
+[data-theme="light"] .contact-meta-row {
+  color: #475569 !important;
+}
+
+[data-theme="light"] .contact-meta-item {
+  color: #1e293b !important;
+  font-weight: 600;
 }
 
 .contact-actions {
