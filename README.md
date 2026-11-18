@@ -67,7 +67,7 @@ git init
 git add .
 git commit -m "feat: initial portfolio release"
 git branch -M main
-git remote add origin https://github.com/Nithin560/portfolio.git
+git remote add origin https://github.com/Nithin560/portifolio.git
 git push -u origin main
 ```
 2. Connect the repo on [vercel.com](https://vercel.com) — zero configuration needed! It deploys immediately.
@@ -75,7 +75,7 @@ git push -u origin main
 ### Deploy to GitHub Pages
 1. In your GitHub repository, go to **Settings** > **Pages**.
 2. Under **Build and deployment**, select `Deploy from a branch` and choose `main` / `root`.
-3. Click **Save**. Your site is live at `https://nithin560.github.io/portfolio/`!
+3. Click **Save**. Your site is live at `https://nithin560.github.io/portifolio/`!
 
 ---
 
