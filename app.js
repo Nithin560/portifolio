@@ -541,6 +541,15 @@
     });
   }
 
+  const CATEGORY_ICONS = {
+    "Backend & Concurrency": "⚡",
+    "Frontend & UI": "🎨",
+    "Databases & Storage": "💾",
+    "AI & Intelligent Systems": "🧠",
+    "DevOps, Cloud & Tooling": "☁️",
+    "Core CS & Engineering": "🏛️"
+  };
+
   function renderSkillsGrid(selectedCategory) {
     const gridContainer = document.getElementById("skills-grid-container");
     if (!gridContainer) return;
@@ -549,25 +558,31 @@
       ? Object.entries(DATA.skills)
       : Object.entries(DATA.skills).filter(([cat]) => cat === selectedCategory);
 
-    gridContainer.innerHTML = entries.map(([category, items]) => `
-      <div class="skill-category-card">
-        <div class="skill-cat-title">
-          <span>${category}</span>
-          <span class="skill-cat-count">${items.length} tools</span>
-        </div>
-        <div class="skills-item-list">
-          ${items.map(item => `
-            <div class="skill-item">
-              <div class="skill-head">
-                <span class="skill-name">${item.name}</span>
-                <span class="skill-lvl-badge">${item.level}</span>
-              </div>
-              <div class="skill-desc">${item.desc}</div>
+    gridContainer.innerHTML = entries.map(([category, items]) => {
+      const icon = CATEGORY_ICONS[category] || "🛠️";
+      return `
+        <div class="skill-category-card">
+          <div class="skill-cat-header">
+            <div class="skill-cat-title">
+              <span class="skill-cat-icon">${icon}</span>
+              <span>${category}</span>
             </div>
-          `).join("")}
+            <span class="skill-cat-count">${items.length} competencies</span>
+          </div>
+          <div class="skills-item-list">
+            ${items.map(item => `
+              <div class="skill-item">
+                <div class="skill-head">
+                  <span class="skill-name">${item.name}</span>
+                  <span class="skill-lvl-badge" data-level="${item.level}">${item.level}</span>
+                </div>
+                <div class="skill-desc">${item.desc}</div>
+              </div>
+            `).join("")}
+          </div>
         </div>
-      </div>
-    `).join("");
+      `;
+    }).join("");
   }
 
   // ==========================================================================
