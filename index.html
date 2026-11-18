@@ -40,6 +40,7 @@
           <li><a href="#projects" class="nav-link">Projects</a></li>
           <li><a href="#terminal" class="nav-link">Terminal</a></li>
           <li><a href="#principles" class="nav-link">Philosophy</a></li>
+          <li><a href="#tools" class="nav-link">Tools</a></li>
           <li><a href="#skills" class="nav-link">Skills</a></li>
           <li><a href="#timeline" class="nav-link">Experience</a></li>
           <li><a href="#contact" class="nav-link">Contact</a></li>
@@ -135,8 +136,8 @@
           <div class="visual-image-wrap">
             <img src="assets/profile.jpg" alt="Nithin Vandana" class="visual-image" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'300\' height=\'350\' viewBox=\'0 0 300 350\'><rect width=\'300\' height=\'350\' fill=\'%23111827\'/><text x=\'50%25\' y=\'50%25\' font-size=\'20\' font-weight=\'bold\' fill=\'%2394a3b8\' text-anchor=\'middle\'>Nithin Vandana</text></svg>'" />
             <div class="image-overlay-badge">
-              <span>📍 Bangalore, Karnataka</span>
-              <span style="color: var(--accent-emerald);">● Online</span>
+              <span class="badge-location">📍 Bangalore, Karnataka</span>
+              <span class="badge-status">● Online</span>
             </div>
           </div>
 
@@ -557,6 +558,261 @@
             <p class="principle-body">
               I treat LLMs as specialized reasoning modules rather than magic bullets. In Smart Diet, Gemini handles contextual meal customization, while deterministic code calculates exact macros, calorie budgets, and validation.
             </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Tools & Technologies Showcase (with Visual Brand Logos)
+         ========================================================================== -->
+    <section id="tools" class="tools-showcase-section">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-kicker">CORE TECH STACK</div>
+          <h2 class="section-title">Tools &amp; Technologies</h2>
+          <p class="section-subtitle">
+            Languages, frameworks, datastores, and cloud platforms I engineer production systems with.
+          </p>
+        </div>
+
+        <div class="tools-grid">
+          <!-- Python -->
+          <div class="tool-card">
+            <div class="tool-icon-wrap" title="Python">
+              <svg viewBox="0 0 128 128" width="36" height="36">
+                <path fill="#3776AB" d="M63.5 13.8c-24.8 0-23.3 10.7-23.3 10.7l.1 11.1h23.8v3.4H30.5S14 37.1 14 62.4s14.4 24.3 14.4 24.3h8.6v-12.1s-.5-14.4 14.2-14.4h24.4s13.7.2 13.7-13.4V27.3s2.1-13.5-25.8-13.5zm-13.2 7.7c2.8 0 5 2.2 5 5s-2.2 5-5 5-5-2.2-5-5 2.2-5 5-5z"/>
+                <path fill="#FFD438" d="M64.5 114.2c24.8 0 23.3-10.7 23.3-10.7l-.1-11.1H63.9V89h33.6s16.5 1.9 16.5-23.4-14.4-24.3-14.4-24.3h-8.6v12.1s.5 14.4-14.2 14.4H52.4s-13.7-.2-13.7 13.4v19.9s-2.1 13.5 25.8 13.5zm13.2-7.7c-2.8 0-5-2.2-5-5s2.2-5 5-5 5 2.2 5 5-2.2 5-5 5z"/>
+              </svg>
+            </div>
+            <div class="tool-info">
+              <span class="tool-name">Python</span>
+              <span class="tool-cat">Core Language</span>
+            </div>
+          </div>
+
+          <!-- FastAPI -->
+          <div class="tool-card">
+            <div class="tool-icon-wrap" title="FastAPI">
+              <svg viewBox="0 0 128 128" width="36" height="36">
+                <circle cx="64" cy="64" r="60" fill="#05998B"/>
+                <path fill="#FFFFFF" d="M68.5 22L36 67h25l-5.5 39L88 61H63z"/>
+              </svg>
+            </div>
+            <div class="tool-info">
+              <span class="tool-name">FastAPI</span>
+              <span class="tool-cat">Backend APIs</span>
+            </div>
+          </div>
+
+          <!-- React -->
+          <div class="tool-card">
+            <div class="tool-icon-wrap" title="React.js">
+              <svg viewBox="0 0 128 128" width="36" height="36">
+                <circle cx="64" cy="64" r="11" fill="#61DAFB"/>
+                <ellipse cx="64" cy="64" rx="54" ry="21" fill="none" stroke="#61DAFB" stroke-width="7" transform="rotate(30 64 64)"/>
+                <ellipse cx="64" cy="64" rx="54" ry="21" fill="none" stroke="#61DAFB" stroke-width="7" transform="rotate(90 64 64)"/>
+                <ellipse cx="64" cy="64" rx="54" ry="21" fill="none" stroke="#61DAFB" stroke-width="7" transform="rotate(150 64 64)"/>
+              </svg>
+            </div>
+            <div class="tool-info">
+              <span class="tool-name">React.js</span>
+              <span class="tool-cat">Frontend UI</span>
+            </div>
+          </div>
+
+          <!-- TypeScript -->
+          <div class="tool-card">
+            <div class="tool-icon-wrap" title="TypeScript">
+              <svg viewBox="0 0 128 128" width="36" height="36">
+                <rect width="128" height="128" rx="20" fill="#3178C6"/>
+                <path fill="#FFFFFF" d="M22 42h38v14H46v46H32V56H22V42zm43 27c0-10 7-16 19-16 8 0 14 3 18 7l-7 10c-3-3-6-5-10-5-5 0-8 3-8 6 0 4 3 6 10 9 12 5 17 10 17 20 0 11-8 17-21 17-9 0-16-4-21-9l7-10c4 4 8 6 13 6 5 0 8-2 8-6 0-4-3-6-11-9-11-4-15-10-15-20z"/>
+              </svg>
+            </div>
+            <div class="tool-info">
+              <span class="tool-name">TypeScript</span>
+              <span class="tool-cat">Typed JavaScript</span>
+            </div>
+          </div>
+
+          <!-- JavaScript -->
+          <div class="tool-card">
+            <div class="tool-icon-wrap" title="JavaScript">
+              <svg viewBox="0 0 128 128" width="36" height="36">
+                <rect width="128" height="128" rx="20" fill="#F7DF1E"/>
+                <path fill="#000000" d="M33 93l14-8c3 5 6 9 12 9 6 0 10-3 10-8 0-6-5-8-13-12-12-5-19-10-19-21 0-11 9-20 23-20 10 0 17 4 22 13l-13 8c-2-4-5-6-9-6-5 0-8 3-8 7 0 5 4 7 12 11 14 6 21 11 21 22 0 13-10 22-26 22-14 0-23-7-26-17zm55-58h15v47c0 8 4 11 10 11 3 0 6-1 8-2v13c-4 2-9 3-15 3-12 0-18-7-18-20V35z"/>
+              </svg>
+            </div>
+            <div class="tool-info">
+              <span class="tool-name">JavaScript</span>
+              <span class="tool-cat">Web Standard</span>
+            </div>
+          </div>
+
+          <!-- Docker -->
+          <div class="tool-card">
+            <div class="tool-icon-wrap" title="Docker">
+              <svg viewBox="0 0 128 128" width="36" height="36">
+                <path fill="#2496ED" d="M123.5 54.3c-2.4-1.8-7.8-1.5-12.1-.2-.8-5.3-4.4-9.8-9.6-11.7l-2.4-.8-.8 2.4c-2 6-1 12.3 2.9 17.2-2.3 1.3-5.2 2.3-8.6 2.8H7c-1.1 0-2 .9-2 2 0 14.5 4.9 26.6 14.4 35.8 11.2 10.9 26.6 16.9 44.4 16.9 38.3 0 62.4-23.7 63.8-59 .1-1.7-.8-3.4-2.1-4.4l-2-.1zm-84-18.1H27v11.7h12.5V36.2zm15.7 0h-12.6v11.7h12.6V36.2zm15.8 0H58.4v11.7H71V36.2zm-31.5-14.7H27v11.7h12.5V21.5zm15.7 0h-12.6v11.7h12.6V21.5zm15.8 0H58.4v11.7H71V21.5zm15.7 14.7H74.1v11.7h12.6V36.2zm15.7 0H89.8v11.7h12.6V36.2z"/>
+              </svg>
+            </div>
+            <div class="tool-info">
+              <span class="tool-name">Docker</span>
+              <span class="tool-cat">Containers</span>
+            </div>
+          </div>
+
+          <!-- PostgreSQL -->
+          <div class="tool-card">
+            <div class="tool-icon-wrap" title="PostgreSQL">
+              <svg viewBox="0 0 128 128" width="36" height="36">
+                <circle cx="64" cy="64" r="58" fill="#336791"/>
+                <path fill="#FFFFFF" d="M64 26c-17.7 0-32 14.3-32 32 0 12.6 7.3 23.5 17.8 28.7l2.8-5.6C44 77 38 68.2 38 58c0-14.3 11.7-26 26-26s26 11.7 26 26c0 10.2-6 19-14.6 23.1l2.8 5.6C88.7 81.5 96 70.6 96 58c0-17.7-14.3-32-32-32zm-6 26v24h12V52H58z"/>
+              </svg>
+            </div>
+            <div class="tool-info">
+              <span class="tool-name">PostgreSQL</span>
+              <span class="tool-cat">Relational DB</span>
+            </div>
+          </div>
+
+          <!-- MongoDB -->
+          <div class="tool-card">
+            <div class="tool-icon-wrap" title="MongoDB">
+              <svg viewBox="0 0 128 128" width="36" height="36">
+                <path fill="#47A248" d="M64 12c-1.8 1.9-34.9 37.6-28.8 69.8 4.2 22 21.8 35.8 28.8 40.2 7-4.4 24.6-18.2 28.8-40.2C98.9 49.6 65.8 13.9 64 12z"/>
+                <path fill="#499D4A" d="M64 12v110c7-4.4 24.6-18.2 28.8-40.2C98.9 49.6 65.8 13.9 64 12z"/>
+                <path fill="#FFFFFF" d="M64 36c-.4 0-.8.2-1.1.5C57.4 43 55 52.4 55 62c0 14.4 7 24.4 8.2 26 .3.4.7.6 1.2.6.4 0 .9-.2 1.2-.6 1.2-1.6 8.2-11.6 8.2-26 0-9.6-2.4-19-7.9-25.5-.3-.3-.7-.5-1.1-.5z"/>
+              </svg>
+            </div>
+            <div class="tool-info">
+              <span class="tool-name">MongoDB</span>
+              <span class="tool-cat">NoSQL Datastore</span>
+            </div>
+          </div>
+
+          <!-- Google Gemini -->
+          <div class="tool-card">
+            <div class="tool-icon-wrap" title="Google Gemini">
+              <svg viewBox="0 0 128 128" width="36" height="36">
+                <defs>
+                  <linearGradient id="geminiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#1BA1E3"/>
+                    <stop offset="35%" stop-color="#5B7DF8"/>
+                    <stop offset="70%" stop-color="#9B5DE5"/>
+                    <stop offset="100%" stop-color="#F15BB5"/>
+                  </linearGradient>
+                </defs>
+                <path fill="url(#geminiGrad)" d="M64 8C64 38.9 38.9 64 8 64c30.9 0 56 25.1 56 56 0-30.9 25.1-56 56-56-30.9 0-56-25.1-56-56z"/>
+              </svg>
+            </div>
+            <div class="tool-info">
+              <span class="tool-name">Google Gemini</span>
+              <span class="tool-cat">LLMs &amp; GenAI</span>
+            </div>
+          </div>
+
+          <!-- Node.js -->
+          <div class="tool-card">
+            <div class="tool-icon-wrap" title="Node.js">
+              <svg viewBox="0 0 128 128" width="36" height="36">
+                <path fill="#339933" d="M64 10.5L16.2 38.1v55.2L64 121l47.8-27.6V38.1L64 10.5zm37.2 78.4L64 110.4 26.8 88.9V45.8L64 24.3l37.2 21.5v43.1z"/>
+                <path fill="#66CC33" d="M64 33.3L34.6 50.3v34.1L64 101.3l29.4-17V50.3L64 33.3z"/>
+              </svg>
+            </div>
+            <div class="tool-info">
+              <span class="tool-name">Node.js</span>
+              <span class="tool-cat">JS Runtime</span>
+            </div>
+          </div>
+
+          <!-- Tailwind CSS -->
+          <div class="tool-card">
+            <div class="tool-icon-wrap" title="Tailwind CSS">
+              <svg viewBox="0 0 128 128" width="36" height="36">
+                <path fill="#06B6D4" d="M64 32c-17.7 0-28.8 8.8-33.3 26.5 6.6-8.8 14.4-12.2 23.3-9.9 5.1 1.3 8.7 5 12.8 9.1 6.6 6.7 14.3 14.5 30.5 14.5 17.7 0 28.8-8.8 33.3-26.5-6.6 8.8-14.4 12.2-23.3 9.9-5.1-1.3-8.7-5-12.8-9.1-6.6-6.7-14.3-14.5-30.5-14.5zM30.7 64C13 64 1.9 72.8-2.6 90.5c6.6-8.8 14.4-12.2 23.3-9.9 5.1 1.3 8.7 5 12.8 9.1 6.6 6.7 14.3 14.5 30.5 14.5 17.7 0 28.8-8.8 33.3-26.5-6.6 8.8-14.4 12.2-23.3 9.9-5.1-1.3-8.7-5-12.8-9.1C64.6 71.8 56.9 64 40.7 64h-10z"/>
+              </svg>
+            </div>
+            <div class="tool-info">
+              <span class="tool-name">Tailwind CSS</span>
+              <span class="tool-cat">CSS Utility UI</span>
+            </div>
+          </div>
+
+          <!-- Git -->
+          <div class="tool-card">
+            <div class="tool-icon-wrap" title="Git">
+              <svg viewBox="0 0 128 128" width="36" height="36">
+                <path fill="#F05032" d="M123.4 56.8L71.2 4.6c-3.1-3.1-8.2-3.1-11.3 0L46 18.5l14.9 14.9c3.3-1.1 7.2-.4 9.9 2.3 2.7 2.7 3.4 6.6 2.3 9.9l14.3 14.3c3.3-1.1 7.2-.4 9.9 2.3 3.8 3.8 3.8 10 0 13.8s-10 3.8-13.8 0c-2.9-2.9-3.5-7.2-2-10.6L67.8 51.5v30.9c.9.5 1.7 1.2 2.3 1.9 3.8 3.8 3.8 10 0 13.8s-10 3.8-13.8 0c-3.8-3.8-3.8-10 0-13.8.9-.9 2-1.6 3.2-2v-32c-1.2-.5-2.3-1.2-3.2-2.1-2.9-2.9-3.5-7.2-2-10.6L39.4 23.8 4.6 58.6c-3.1 3.1-3.1 8.2 0 11.3l52.2 52.2c3.1 3.1 8.2 3.1 11.3 0l55.3-55.3c3.1-3.1 3.1-8.2 0-11.3z"/>
+              </svg>
+            </div>
+            <div class="tool-info">
+              <span class="tool-name">Git</span>
+              <span class="tool-cat">Version Control</span>
+            </div>
+          </div>
+
+          <!-- Linux / Ubuntu -->
+          <div class="tool-card">
+            <div class="tool-icon-wrap" title="Linux / Ubuntu">
+              <svg viewBox="0 0 128 128" width="36" height="36">
+                <circle cx="64" cy="64" r="58" fill="#E95420"/>
+                <circle cx="28" cy="64" r="8" fill="#FFFFFF"/>
+                <circle cx="82" cy="33" r="8" fill="#FFFFFF"/>
+                <circle cx="82" cy="95" r="8" fill="#FFFFFF"/>
+                <path fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" d="M46 64a26 26 0 0 1 26-26m0 52a26 26 0 0 1-26-26m34-19a26 26 0 0 1 0 38"/>
+              </svg>
+            </div>
+            <div class="tool-info">
+              <span class="tool-name">Linux / Ubuntu</span>
+              <span class="tool-cat">Server OS &amp; CLI</span>
+            </div>
+          </div>
+
+          <!-- SQLAlchemy -->
+          <div class="tool-card">
+            <div class="tool-icon-wrap" title="SQLAlchemy">
+              <svg viewBox="0 0 128 128" width="36" height="36">
+                <rect width="128" height="128" rx="20" fill="#D71F00"/>
+                <path fill="#FFFFFF" d="M64 24c-19.9 0-36 7.2-36 16v48c0 8.8 16.1 16 36 16s36-7.2 36-16V40c0-8.8-16.1-16-36-16zm0 10c14.9 0 26 4.7 26 6s-11.1 6-26 6-26-4.7-26-6 11.1-6 26-6zm0 24c14.9 0 26 4.7 26 6s-11.1 6-26 6-26-4.7-26-6 11.1-6 26-6zm0 24c14.9 0 26 4.7 26 6s-11.1 6-26 6-26-4.7-26-6 11.1-6 26-6z"/>
+              </svg>
+            </div>
+            <div class="tool-info">
+              <span class="tool-name">SQLAlchemy</span>
+              <span class="tool-cat">Python ORM</span>
+            </div>
+          </div>
+
+          <!-- MySQL -->
+          <div class="tool-card">
+            <div class="tool-icon-wrap" title="MySQL">
+              <svg viewBox="0 0 128 128" width="36" height="36">
+                <rect width="128" height="128" rx="20" fill="#00618A"/>
+                <path fill="#E48E00" d="M38 46c4-10 16-16 28-14 8 2 14 7 18 14-8-1-17 1-24 5-8 5-14 13-17 22-3-8-4-19-5-27z"/>
+                <path fill="#FFFFFF" d="M64 48c12 0 22 7 26 18-3 0-6 1-9 3-8 4-13 12-15 21-8-3-15-10-18-18-3-9-1-18 6-24z"/>
+              </svg>
+            </div>
+            <div class="tool-info">
+              <span class="tool-name">MySQL</span>
+              <span class="tool-cat">Relational DB</span>
+            </div>
+          </div>
+
+          <!-- GitHub Actions -->
+          <div class="tool-card">
+            <div class="tool-icon-wrap" title="GitHub Actions">
+              <svg viewBox="0 0 128 128" width="36" height="36">
+                <rect width="128" height="128" rx="20" fill="#2088FF"/>
+                <circle cx="44" cy="44" r="14" fill="#FFFFFF"/>
+                <circle cx="84" cy="84" r="14" fill="#FFFFFF"/>
+                <circle cx="84" cy="44" r="10" fill="#FFFFFF" opacity="0.6"/>
+                <path d="M44 44h40v40" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="tool-info">
+              <span class="tool-name">GitHub Actions</span>
+              <span class="tool-cat">CI/CD Automation</span>
+            </div>
           </div>
         </div>
       </div>

@@ -125,6 +125,8 @@
     { id: "smartdiet", group: "Architecture Deep Dive", label: "Inspect Smart Diet (Gemini AI Fitness)", icon: "🥗", action: () => openArchModal("smart-diet") },
     { id: "sec-projects", group: "Navigation", label: "Jump to Projects", icon: "🚀", action: () => scrollToSection("projects") },
     { id: "sec-terminal", group: "Navigation", label: "Jump to Developer Terminal", icon: "💻", action: () => scrollToSection("terminal") },
+    { id: "sec-principles", group: "Navigation", label: "Jump to Engineering Philosophy", icon: "💡", action: () => scrollToSection("principles") },
+    { id: "sec-tools", group: "Navigation", label: "Jump to Tools & Technologies", icon: "⚙️", action: () => scrollToSection("tools") },
     { id: "sec-skills", group: "Navigation", label: "Jump to Technical Arsenal", icon: "🛠️", action: () => scrollToSection("skills") },
     { id: "sec-experience", group: "Navigation", label: "Jump to Experience & Awards", icon: "🏆", action: () => scrollToSection("experience") },
     { id: "sec-contact", group: "Navigation", label: "Jump to Contact", icon: "📬", action: () => scrollToSection("contact") }
@@ -394,6 +396,7 @@
       "Available commands:",
       "  whoami       - Display developer summary and core focus",
       "  projects     - List flagship production platforms",
+      "  tools        - List core technologies and tools",
       "  skills       - Display full technical matrix breakdown",
       "  stats        - Show verified engineering metrics",
       "  contact      - Display contact channels and email/phone",
@@ -413,6 +416,14 @@
     ].join("\n"),
 
     projects: () => DATA.projects.map(p => `• [${p.id.toUpperCase()}] ${p.title}\n  ${p.tagline}\n  Stack: ${p.tags.slice(0, 6).join(", ")}`).join("\n\n"),
+
+    tools: () => [
+      "Core Technologies & Tools:",
+      "  • Python, FastAPI, React.js, TypeScript, JavaScript, Docker",
+      "  • PostgreSQL, MongoDB, Google Gemini, Node.js, Tailwind CSS, Git",
+      "  • Linux (Ubuntu), SQLAlchemy, MySQL, GitHub Actions",
+      "  Jump to #tools on the page to view the visual brand showcase."
+    ].join("\n"),
 
     skills: () => Object.entries(DATA.skills).map(([cat, list]) => `${cat.toUpperCase()}:\n  ${list.map(s => s.name).join(" • ")}`).join("\n\n"),
 
